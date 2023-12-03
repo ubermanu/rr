@@ -25,7 +25,7 @@ shift  # Shift the arguments to remove the command
 clear
 
 while true; do
-    echo -e "${GREEN}Press \"${target_key}\" to re-run the command..."
+    echo -e "${GREEN}Press \"${target_key}\" to re-run the command...${RESET}"
     read -rsn1 input_key
 
     if [ "$input_key" = "$target_key" ]; then
